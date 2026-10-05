@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="fingerflow/ui/Logo_fingerflow_V2.png" alt="Logo FingerFlow" width="220">
+<img src="./fingerflow/ui/logo-readme.png" alt="Logo FingerFlow" width="220">
 
 # FingerFlow
 
