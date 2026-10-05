@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="fingerflow/ui/Logo_fingerflow_V2.png" alt="Logo FingerFlow" width="220">
+
 # FingerFlow
 
 ### Contrôlez votre ordinateur d’un simple geste de la main
