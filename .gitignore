@@ -1,0 +1,46 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+!packaging/fingerflow.spec
+
+# Dossiers de build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Caches divers
+.ipynb_checkpoints/
+.pytest_cache/
+.cache/
+.mypy_cache/
+.hypothesis/
+
+# --- uv (Astral) ---
+.uv/
+.uv.cache/
+.uv.lock
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Tools / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/

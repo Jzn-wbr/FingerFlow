@@ -2,9 +2,9 @@
 
 # FingerFlow
 
-*ContrÃ´lez votre ordinateur d'un simple geste de la main*
+*Contrôlez votre ordinateur d'un simple geste de la main*
 
-**Luisoni Tom** â€¢ **Marchand Luc** â€¢ **Weber Jason**
+**Luisoni Tom** • **Marchand Luc** • **Weber Jason**
 
 ---
 
@@ -12,86 +12,86 @@
 
 ## Description du projet
 
-Notre projet consiste Ã  dÃ©velopper un programme Python utilisant MediaPipe pour la reconnaissance de la main en temps rÃ©el. GrÃ¢ce Ã  la dÃ©tection des points clÃ©s de la main (landmarks), l'utilisateur pourra interagir avec son ordinateur, en simulant des actions telles que :
+Notre projet consiste à développer un programme Python utilisant MediaPipe pour la reconnaissance de la main en temps réel. Grâce à la détection des points clés de la main (landmarks), l'utilisateur pourra interagir avec son ordinateur, en simulant des actions telles que :
 
-- le dÃ©placement du curseur (comme une souris)
-- les diffÃ©rents clics par gestes
+- le déplacement du curseur (comme une souris)
+- les différents clics par gestes
 - le dessin dans l'air avec un doigt
 
-L'application exploitera la webcam pour capter les mouvements de la main et traduire ces gestes en commandes interactives. Ce projet combine des domaines variÃ©s tels que :
+L'application exploitera la webcam pour capter les mouvements de la main et traduire ces gestes en commandes interactives. Ce projet combine des domaines variés tels que :
 
 - la vision par ordinateur
 - l'interaction homme-machine
-- la crÃ©ativitÃ© numÃ©rique
+- la créativité numérique
 
-Le programme sera exÃ©cutÃ© directement sous Windows, afin de garantir un accÃ¨s plus simple et plus fiable Ã  la camÃ©ra, contrairement Ã  l'environnement WSL, qui prÃ©sente certaines limitations Ã  ce niveau.
+Le programme sera exécuté directement sous Windows, afin de garantir un accès plus simple et plus fiable à la caméra, contrairement à l'environnement WSL, qui présente certaines limitations à ce niveau.
 
 ## Objectifs
 
-Les objectifs suivants ont Ã©tÃ© parfaitement atteint :
+Les objectifs suivants ont été parfaitement atteint :
 
-- RÃ©ussir Ã  dÃ©tecter une main avec prÃ©cision Ã  l'aide de MediaPipe
-- InterprÃ©ter les mouvements et gestes pour simuler des actions (dÃ©placement du curseur, clic, dessin)
-- CrÃ©er une interface intuitive et fluide pour permettre une interaction naturelle
-- Explorer les possibilitÃ©s de contrÃ´le sans contact dans un environnement desktop
+- Réussir à détecter une main avec précision à l'aide de MediaPipe
+- Interpréter les mouvements et gestes pour simuler des actions (déplacement du curseur, clic, dessin)
+- Créer une interface intuitive et fluide pour permettre une interaction naturelle
+- Explorer les possibilités de contrôle sans contact dans un environnement desktop
 
 ---
 
 
-### ContrÃ´les de base - Mode Normal (N)
+### Contrôles de base - Mode Normal (N)
 
-1. **DÃ©placement du curseur**
-   - Levez votre main face Ã  la webcam
+1. **Déplacement du curseur**
+   - Levez votre main face à la webcam
    - Le curseur suivra le centre de votre paume
 
 2. **Clic gauche**
    - Pincez avec votre pouce et votre index
-   - Le clic s'exÃ©cutera automatiquement
+   - Le clic s'exécutera automatiquement
 
 3. **Clic droit**
    - Pincez avec votre pouce et votre majeur
-   - Le clic droit s'exÃ©cutera automatiquement
+   - Le clic droit s'exécutera automatiquement
 
-4. **AccÃ©der au sÃ©lecteur de mode**
+4. **Accéder au sélecteur de mode**
    - Fermez la main
-   - Les touches **N**, **D**, **Z**, **S**, **P** permetent d'activer les diffÃ©rents modes
+   - Les touches **N**, **D**, **Z**, **S**, **P** permetent d'activer les différents modes
 
 #### Modes disponibles :
 
-- **Mode Normal (N)** â€” Mode par dÃ©faut
-  - DÃ©placement du curseur et clics standard
+- **Mode Normal (N)** — Mode par défaut
+  - Déplacement du curseur et clics standard
 
 - **Mode Dessin (D)**
    - Lance l'application Paint (mspaint.exe)
   - Permet de dessiner avec mouvements naturels de la main
-  - Mouvements lissÃ©s pour une meilleure prÃ©cision
+  - Mouvements lissés pour une meilleure précision
 
 - **Mode Zoom (Z)**
   - Pincement pouce-index : Zoom avant (Ctrl++)
-  - Pincement pouce-majeur : Zoom arriÃ¨re (Ctrl+-)
+  - Pincement pouce-majeur : Zoom arrière (Ctrl+-)
   - Parfait pour naviguer dans des documents ou des images
 
 - **Mode Scroll (S)**
   - Pincement pouce-index : Scroll vers le bas
   - Pincement pouce-majeur : Scroll vers le haut
-  - IdÃ©al pour parcourir des listes ou des pages web
+  - Idéal pour parcourir des listes ou des pages web
 
 - **Mode Pause (P)**
-  - Le curseur arrÃªte de se dÃ©placer
-  - Les clics sont dÃ©sactivÃ©s
-  - IdÃ©al pour faire des pauses sans fermer le programme
+  - Le curseur arrête de se déplacer
+  - Les clics sont désactivés
+  - Idéal pour faire des pauses sans fermer le programme
 
-En plus de ces modes, la touche **T** permet de basculer l'affichage de la fenÃªtre du mode "Always On Top" (toujours visible) Ã  "Hide" (cachÃ©e)
+En plus de ces modes, la touche **T** permet de basculer l'affichage de la fenêtre du mode "Always On Top" (toujours visible) à "Hide" (cachée)
 
 ---
 
 ### Conseils d'utilisation
 
-- **LuminositÃ©** : Assurez-vous que votre environnement est bien Ã©clairÃ© et pas Ã  contre jour, pour une meilleure dÃ©tection
-- **Distance** : Maintenez votre main Ã  une distance de 30-60 cm de la webcam
-- **StabilitÃ©** : Utilisez un support pour la webcam ou maintenez-la stable
-- **Fond** : Un fond non chargÃ© amÃ©liore la qualitÃ© de la dÃ©tection
-- **Performances** : Le programme optimise automatiquement la prioritÃ© du processus pour minimiser la latence
+- **Luminosité** : Assurez-vous que votre environnement est bien éclairé et pas à contre jour, pour une meilleure détection
+- **Distance** : Maintenez votre main à une distance de 30-60 cm de la webcam
+- **Stabilité** : Utilisez un support pour la webcam ou maintenez-la stable
+- **Fond** : Un fond non chargé améliore la qualité de la détection
+- **Performances** : Le programme optimise automatiquement la priorité du processus pour minimiser la latence
 
 ---
 ---
@@ -108,14 +108,14 @@ En plus de ces modes, la touche **T** permet de basculer l'affichage de la fenÃ
 ---
 ---
 
-## DÃ©veloppeur
+## Développeur
 
-### PrÃ©requis
-- Python 3.11 ou supÃ©rieur
+### Prérequis
+- Python 3.11 ou supérieur
 - Une webcam fonctionnelle
-- Windows (le programme est optimisÃ© pour Windows)
+- Windows (le programme est optimisé pour Windows)
 
-### Ã‰tapes d'installation
+### Étapes d'installation
 
 1. **Cloner le repository**
    ```bash
@@ -123,97 +123,96 @@ En plus de ces modes, la touche **T** permet de basculer l'affichage de la fenÃ
    cd mini-projet-fingerflow
    ```
 
-2. **Installer l'environnement virtuel et dÃ©pendances**
+2. **Installer l'environnement virtuel et dépendances**
    
-   Le projet utilise `uv` pour gÃ©rer les dÃ©pendances. Si vous n'avez pas `uv` installÃ© :
+   Le projet utilise `uv` pour gérer les dépendances. Si vous n'avez pas `uv` installé :
    ```bash
    # Installer Python 3.11 via uv
    uv python install 3.11
    ```
 
-3. **Synchroniser les dÃ©pendances**
+3. **Synchroniser les dépendances**
    ```bash
    uv sync
    ```
 
 ### Lancement du programme
 
-#### Lancement de FingerFlow en temps rÃ©el
+#### Lancement de FingerFlow en temps réel
 
 ```bash
 uv run fingerflow
 ```
 
-Le programme dÃ©marrera avec la dÃ©tection de main activÃ©e et affichera le flux vidÃ©o avec les landmarks dÃ©tectÃ©s.
+Le programme démarrera avec la détection de main activée et affichera le flux vidéo avec les landmarks détectés.
 
-#### ArrÃªt du programme
+#### Arrêt du programme
 
-Pour arrÃªter le programme, il suffit simplement de cliquer sur le bouton `Quit` de la fenÃªtre
+Pour arrêter le programme, il suffit simplement de cliquer sur le bouton `Quit` de la fenêtre
 
 ---
 
-### Gestion des dÃ©pendances
+### Gestion des dépendances
 
-#### Ajouter une nouvelle dÃ©pendance
+#### Ajouter une nouvelle dépendance
 
 ```bash
 uv add <nom-du-package>
 ```
 
-#### Mettre Ã  jour toutes les dÃ©pendances
+#### Mettre à jour toutes les dépendances
 
 ```bash
 uv sync
 ```
 
-#### Lancer un script spÃ©cifique
+#### Lancer un script spécifique
 
 ```bash
 uv run <script-ou-commande>
 ```
 
-## CrÃ©ation d'un installateur Windows (x64)
+## Création d'un installateur Windows (x64)
 
-### PrÃ©requis
+### Prérequis
 - Windows 64-bit
-- Inno Setup installÃ© (version standard)
+- Inno Setup installé (version standard)
 
-### Ã‰tapes
+### Étapes
 
-1. **Installer les dÃ©pendances de build**
+1. **Installer les dépendances de build**
    ```bash
    uv sync --extra build
    ```
 
-2. **GÃ©nÃ©rer l'exÃ©cutable**
+2. **Générer l'exécutable**
    ```bash
    uv run pyinstaller packaging/fingerflow.spec
    ```
 
-3. **GÃ©nÃ©rer l'installateur**
+3. **Générer l'installateur**
    - Ouvrir `packaging/installer.iss` dans Inno Setup puis cliquer sur **Compile**
    - Ou en ligne de commande :
      ```bash
      iscc packaging/installer.iss
      ```
 
-L'installateur final est crÃ©Ã© dans `packaging/dist-installer/FingerFlow-Setup.exe`.
-Il crÃ©e un raccourci bureau et utilise l'icÃ´ne `fingerflow/ui/Logo_fingerflow_V2.ico`.
+L'installateur final est créé dans `packaging/dist-installer/FingerFlow-Setup.exe`.
+Il crée un raccourci bureau et utilise l'icône `fingerflow/ui/Logo_fingerflow_V2.ico`.
 
-## DÃ©pannage
+## Dépannage
 
-**Le programme ne dÃ©marre pas :**
-- VÃ©rifiez que Python 3.11 est installÃ© : `uv python list`
-- VÃ©rifiez que la webcam est connectÃ©e et fonctionnelle
-- RÃ©exÃ©cutez `uv sync` pour vous assurer que toutes les dÃ©pendances sont correctement installÃ©es
+**Le programme ne démarre pas :**
+- Vérifiez que Python 3.11 est installé : `uv python list`
+- Vérifiez que la webcam est connectée et fonctionnelle
+- Réexécutez `uv sync` pour vous assurer que toutes les dépendances sont correctement installées
 
-**La dÃ©tection de main ne fonctionne pas :**
-- AmÃ©liorez l'Ã©clairage de votre environnement
-- VÃ©rifiez que votre webcam fonctionne (testez-la avec une autre application)
-- Assurez-vous que le modÃ¨le `hand_landmarker.task` est prÃ©sent dans le dossier `model/`
+**La détection de main ne fonctionne pas :**
+- Améliorez l'éclairage de votre environnement
+- Vérifiez que votre webcam fonctionne (testez-la avec une autre application)
+- Assurez-vous que le modèle `hand_landmarker.task` est présent dans le dossier `model/`
 
-**Le curseur n'est pas prÃ©cis :**
-- Ajustez la distance de votre main par rapport Ã  la webcam
-- RÃ©duisez la luminositÃ© si elle est excessive
-
+**Le curseur n'est pas précis :**
+- Ajustez la distance de votre main par rapport à la webcam
+- Réduisez la luminosité si elle est excessive
 
